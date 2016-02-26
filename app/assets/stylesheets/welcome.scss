@@ -1,3 +1,61 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-default {
+  background: #fff;
+  border: none;
+}
+
+.navbar {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+/*   background: url(http://www.brandignity.com/wp-content/uploads/2011/03/Dollarphotoclub_80260547-e1439297307185.jpg) no-repeat; */
+  background: image-url("header.jpg") no-repeat;
+  height: 550px;
+  text-align: center;
+  margin-top: -20px;
+
+  .header-content {
+    position: absolute;
+    top: 30%;
+    
+    h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 65px;
+      text-shadow: 1px 1px 9px #000;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 30px;
+      text-shadow: 1px 1px 9px #000;
+      font-family: serif;
+      margin-top: 20px;
+    }
+    
+    .btn {
+      font-size: 24px;
+      border-radius: 300px;
+      margin-top: 50px;
+      padding: 5px 25px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .navbar-center {
+    width: 70%;
+  }
+  
+  .navbar-nav>li>a, .navbar-default a {
+    padding: 35px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

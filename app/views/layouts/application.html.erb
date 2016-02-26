@@ -2,12 +2,43 @@
 <html>
 <head>
   <title>Sendee</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-center">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="color: limegreen">SENDEE</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Getting started</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  
+  <header>
+    <div class="header-content">
+      <h1>MODERN CONTACT FORMS AND NEWSLETTER</h1>
+      <p>A modern approach to creating contact forms in pure HTML5.</p>
+      <a href="" class="btn btn-success btn-xl">Start now!</a>
+    </div>
+  </header>
 
 <%= yield %>
 
