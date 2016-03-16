@@ -1,0 +1,29 @@
+<%= form_for(@foward_contact) do |f| %>
+  <% if @foward_contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@foward_contact.errors.count, "error") %> prohibited this foward_contact from being saved:</h2>
+
+      <ul>
+      <% @foward_contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :token %><br>
+    <%= f.text_field :token %>
+  </div>
+  <div class="field">
+    <%= f.label :to %><br>
+    <%= f.text_field :to %>
+  </div>
+  <div class="field">
+    <%= f.label :fields %><br>
+    <%= f.text_field :fields %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
