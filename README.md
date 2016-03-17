@@ -1,2 +1,2 @@
-SENDEE [![Build Status](https://travis-ci.org/hugoabonizio/sendee.svg?branch=master)](https://travis-ci.org/hugoabonizio/sendee)
+SENDEE [![Build Status](https://travis-ci.org/hugoabonizio/sendee.svg?branch=master)](https://travis-ci.org/hugoabonizio/sendee) [![Code Climate](https://codeclimate.com/github/hugoabonizio/sendee/badges/gpa.svg)](https://codeclimate.com/github/hugoabonizio/sendee) [![Test Coverage](https://codeclimate.com/github/hugoabonizio/sendee/badges/coverage.svg)](https://codeclimate.com/github/hugoabonizio/sendee/coverage)
 ======
