@@ -59,6 +59,10 @@ section.services {
     font-weight: 700;
   }
   
+  h4.service-heading {
+    text-transform: uppercase;
+  }
+  
   .text-muted {
     color: #777;
   }
@@ -67,7 +71,6 @@ section.services {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
-    font-style: italic;
     font-weight: 400;
     margin-bottom: 75px;
   }
