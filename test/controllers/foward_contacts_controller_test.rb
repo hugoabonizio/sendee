@@ -19,4 +19,18 @@ class FowardContactsControllerTest < ActionController::TestCase
     result = JSON.parse(response.body)
     assert_equal 'ok', result['status']
   end
+  
+  test "should deliver email" do
+    skip 'implement mailer'
+    token = @foward_contact.token
+    
+    post :foward, token: token
+    assert_response :success
+  end
+  
+  test "should fail with invalid token" do
+    post :foward, token: 'invalid'
+    result = JSON.parse(response.body)
+    assert_equal 'error', result['status']
+  end
 end
