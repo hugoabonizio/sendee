@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root to: 'welcome#index'
-  
+
   resources :foward_contacts, only: [:new, :create], path: 'foward'
   post '/foward/:token' => 'foward_contacts#foward'
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

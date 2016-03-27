@@ -1,5 +1,4 @@
 class FowardContactsController < ApplicationController
-
   def new
     @foward_contact = FowardContact.new
   end
@@ -13,7 +12,7 @@ class FowardContactsController < ApplicationController
       render :new
     end
   end
-  
+
   def foward
     @form = FowardContact.find_by_token(params.require(:token))
     if @form
@@ -24,7 +23,8 @@ class FowardContactsController < ApplicationController
   end
 
   private
-    def foward_contact_params
-      params.require(:foward_contact).permit(:to, :fields)
-    end
+
+  def foward_contact_params
+    params.require(:foward_contact).permit(:to, :fields)
+  end
 end

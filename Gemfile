@@ -35,10 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rubocop', group: :development
 
-gem "codeclimate-test-reporter", group: :test, require: nil
+gem 'codeclimate-test-reporter', group: :test, require: nil
 
 group :development, :test do
   gem 'byebug'
   gem 'spring'
 end
-
